@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- SPLIDE CSS STYLESHEET -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- MTC CSS STYLESHEETS -->
+    <link rel="stylesheet" href="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/fontyourface/local_fonts/poppins_bold/font.css" media="all">
+    <link rel="stylesheet" href="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/fontyourface/local_fonts/poppins_regular/font.css" media="all">
+    <link rel="stylesheet" href="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/fontyourface/local_fonts/poppins_light/font.css" media="all">
+    <link rel="stylesheet" media="all" href="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/css/css_NxOg57z5a22EjjKePCJjmOrqYwfEXGBg518HCg_xErs.css">
+    <link rel="stylesheet" media="all" href="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/css/css_jKip8-yTLRGruTcn6MUQRG2dB2x-Ibpqjb9nQ22U8lc.css">
+    <link rel="stylesheet" media="print" href="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/css/css_Y4H_5aqmgyCtG7E7YdseTs2qvy9C34c51kBamDdgark.css">
+    <link rel="stylesheet" media="all" href="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/css/css_Nn7a7yuooG1VKqdEMsUw9XZLgoTwmDuMoA5oeU74ZY4.css">
+    <title>MTC Tailored</title>
+  </head>
+  <body>
+
+    <div id="tcu-resultsrow" class="row">
+      <div class="col-12 col-md-6 image">
+        <div class="field field--name-field-layout-1 field--type-entity-reference-revisions field--label-hidden field--layout">
+          <div class="center image--paragraph standard-spacing">
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden">
+              <img id="cp-img" src="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/styles/slider_desktop_2880/public/2022-08/startnow-image.webp">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 no-image" style="margin: auto;">
+        <div class="field field--name-field-layout-2 field--type-entity-reference-revisions field--label-hidden field--layout">
+          <div class="paragraph paragraph--type--simple-text">
+            <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden">
+              <p class="brand-primary-text-color"><strong>Start your journey here</strong></p>
+              <h2 class="brand-primary-text-color" id="cp-qtext">Jump right to<br>
+              <strong>the information you need</strong></h2>
+              <p style="padding-bottom: 20px;"><strong>Moments that count aims to provide helpful tools and information to support you on your journey with breast cancer. Take this short questionnaire and we’ll recommend the content we think will be the most helpful.</strong></p>
+              <div class="clearfix">
+                <a id="tcu-nextbut" class="button secondary button--left button--secondary brand-secondary-button brand-secondary-border-button border-width-0 white-no-transition-text tcu-button" onclick="tcuStart();">Start the questionnaire &gt;</a>
+              </div>
+              <img src="https://www.momentsthatcount.co.uk/sites/momentsthatcount_co_uk/files/styles/slider_desktop_2880/public/2022-08/up-arrow.webp" alt="" style="max-width: 120px; margin-top:20px; margin-left:50px;">
+            </div>
+            <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden">
+                <p class="clearfix text-align-right neutral-dark-grey-text-color" style="padding-top:20px;">UK | Month 2023 | ******</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="carouselContainer" class="hide">
+      <div id="tcu-carouselrow-header" class="row mt-3">
+        <div class="col-12">
+          <div class="field field--type-entity-reference-revisions field--label-hidden field--layout">
+            <div class="paragraph paragraph--type--simple-text">
+              <div class="clearfix text-formatted field--name-field-content field--type-text-long field--label-hidden text-align-center">
+                <small class="brand-primary-text-color">Your results</small>
+                <h2 class="brand-primary-text-color carousel-header">A few things we think<br><strong>might help</strong></h2>
+                <p class="carousel-subtext"><strong>Based on your answers, we suggest viewing the following guides and pages for more information.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tcuCarouselContent" class="splide" aria-label="Tailored User Content">
+        <div class="splide__track">
+          <ul class="splide__list" id="carouselItems">
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
+
